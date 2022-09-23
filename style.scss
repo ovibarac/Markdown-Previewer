@@ -1,0 +1,62 @@
+//dark color theme
+$background: #121212;
+$secondary: #181818;
+$card: #404040;
+$text: #fff;
+$secondaryText: #b3b3b3;
+$shadowCard: 1px 1px 10px 2px darken($card, 20%);
+$shadowSec: 1px 1px 10px 2px darken($secondary, 20%);
+
+body{
+  background-color: $background;
+  font-family: "Raleway", sans-serif;
+  color: $text;
+  height:100vh;
+  
+  
+  #wrapper{
+    margin: auto;
+    background-color: $secondary;
+    padding: 50px;
+    min-height: 100vh;
+    box-shadow: $shadowSec;
+  
+    #editor{
+      color: $text;
+      background-color: $card;
+      height: 100vh;
+      border: 0;
+      
+      width: 99%;
+      min-height: 200px;
+      margin-bottom: -5px;
+      resize: vertical;
+      outline: none;
+      padding-left: 5px;
+      padding-top: 5px;
+      font-size: 0.875rem;
+    }
+    
+    #preview{
+      img{
+        width: 200px;
+        max-width: 90%;
+      }
+    }
+    
+    .textBox{
+      background-color: $card;
+      min-height: 100vh;
+      padding: 20px;
+      
+      border-radius: 15px;
+      box-shadow: $shadowCard;
+    }
+
+    .title{
+      color: $secondaryText;
+      font-size: 1.5em;
+    }
+    
+  }
+}
